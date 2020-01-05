@@ -1,0 +1,12 @@
+<div class="cards">
+  <% @deck.cards.each do |card| %>
+  <div class="card-text">
+  <img src="https://fecipher.jp/wp-content/uploads/cards/images/<%= card.Imagefile%>"></img>
+  <h2><%= card.Name %></h2>
+  <p><%= card.Skill1 %></p>
+  <p><%= card.Skill2 %></p>
+  <p><%= card.Skill3 %></p>
+  <p><%= card.Skill4 %></p>
+  </div>
+  <% end %>
+</div>

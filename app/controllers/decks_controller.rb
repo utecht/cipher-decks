@@ -15,6 +15,10 @@ class DecksController < ApplicationController
     @deck = Deck.find(params[:id])
   end
 
+  def combined_show
+    @deck = Deck.find(params[:id])
+  end
+
   def create
     @deck = Deck.new
     @deck.name = params[:name]

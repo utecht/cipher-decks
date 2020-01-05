@@ -1,6 +1,7 @@
 <h2><%= @deck.name %></h2>
 <%= link_to 'Image Display', image_show_url(@deck) %>
 <%= link_to 'Text Display', text_show_url(@deck) %>
+<%= link_to 'Combined Display', combined_show_url(@deck) %>
 
 <form action="add_card" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>

@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>ID</th>
     <th>Name</th>
     <th>Set</th>
     <th>Color</th>
@@ -18,6 +19,7 @@
   </tr>
   <% @cards.each do |card| %>
   <tr>
+    <td><%= card.id %></td>
     <td><%= link_to card.Name, card_path(card) %></td>
     <td><%= card.Set %></td>
     <td><%= card.Color %></td>
