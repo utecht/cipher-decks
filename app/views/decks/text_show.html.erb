@@ -1,0 +1,11 @@
+<div class="cards">
+  <% @deck.cards.each do |card| %>
+  <div class="card-text">
+  <h2><%= card.Name %></h2>
+  <p><%= card.Skill1 %></p>
+  <p><%= card.Skill2 %></p>
+  <p><%= card.Skill3 %></p>
+  <p><%= card.Skill4 %></p>
+  </div>
+  <% end %>
+</div>

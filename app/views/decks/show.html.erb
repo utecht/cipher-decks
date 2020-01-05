@@ -1,0 +1,47 @@
+<h2><%= @deck.name %></h2>
+<%= link_to 'Image Display', image_show_url(@deck) %>
+<%= link_to 'Text Display', text_show_url(@deck) %>
+
+<form action="add_card" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label>Add Card</label>
+  <input type="hidden" name="deck_id" value="<%= @deck.id %>">
+  <input name="card_id" type="text">
+  <input type="submit" value="Add Card">
+</form>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Set</th>
+    <th>Color</th>
+    <th>Rarity</th>
+    <th>Cost</th>
+    <th>Type</th>
+    <th>Range</th>
+    <th>Attack</th>
+    <th>Support</th>
+    <th>Skill1</th>
+    <th>Skill2</th>
+    <th>Skill3</th>
+    <th>Skill4</th>
+  </tr>
+  <% @deck.cards.each do |card| %>
+  <tr>
+    <td><%= link_to card.Name, card_path(card) %></td>
+    <td><%= card.Set %></td>
+    <td><%= card.Color %></td>
+    <td><%= card.Rarity %></td>
+    <td><%= card.Cost %></td>
+    <td><%= card.Type %></td>
+    <td><%= card.Range %></td>
+    <td><%= card.Attack %></td>
+    <td><%= card.Support %></td>
+    <td><%= card.Skill1 %></td>
+    <td><%= card.Skill2 %></td>
+    <td><%= card.Skill3 %></td>
+    <td><%= card.Skill4 %></td>
+  </tr>
+  <% end %>
+</table>
