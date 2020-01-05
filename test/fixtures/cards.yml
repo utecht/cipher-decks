@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Set: MyString
+  Imagefile: MyString
+  Color: MyString
+  Rarity: MyString
+  Cost: MyString
+  Class: MyString
+  Type: MyString
+  Range: MyString
+  Attack: MyString
+  Support: MyString
+  Skill1: MyText
+  Skill2: MyText
+  Skill3: MyText
+  Skill4: MyText
+
+two:
+  Name: MyString
+  Set: MyString
+  Imagefile: MyString
+  Color: MyString
+  Rarity: MyString
+  Cost: MyString
+  Class: MyString
+  Type: MyString
+  Range: MyString
+  Attack: MyString
+  Support: MyString
+  Skill1: MyText
+  Skill2: MyText
+  Skill3: MyText
+  Skill4: MyText
